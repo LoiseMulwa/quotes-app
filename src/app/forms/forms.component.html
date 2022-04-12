@@ -1,12 +1,13 @@
 
 <div>
+  <br>
+  <h4 class="qq text-center ">Add your quote in the form.</h4>
     <hr>
-
-    <form  (ngSubmit)='submitQuote()' #quoteForm='ngForm' id="myform">
-        <div class="form-group mt-5" >
+<form  (ngSubmit)='submitQuote()' #quoteForm='ngForm' id="myform">
+        <div class="form-group mt-5 " >
          
   
-            <label for="author">Author</label>
+            <label for="author">Author:</label>
             <input type="text" required class="form-control" id="author" [(ngModel)]="addNewQuote.author" name="author" #author='ngModel'>
             Display {{addNewQuote.author}}
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
@@ -18,7 +19,7 @@
 
         <div class="form-group">
   
-            <label for="quote">Quote</label>
+            <label for="quote">Quote:</label>
             <textarea class="form-control" id="quote" rows="4"[(ngModel)]="addNewQuote.quote" name="quote" #quote="ngModel" required></textarea>
             <div [hidden]="quote.valid || quote.pristine" class="alert alert-danger">
                 <p>Please enter your Quote</p>
@@ -28,7 +29,7 @@
         
         <div class="form-group">
   
-            <label for="name">Name</label>
+            <label for="name">Name:</label>
             <input type="text" required class="form-control" id="name"[(ngModel)]="addNewQuote.name" name="name" #name="ngModel">
             Display {{addNewQuote.name}}
             <div [hidden]="name.valid || name.pristine" class="alert alert-danger">
@@ -41,7 +42,7 @@
                 <input type='date' id="complete" required>
       
             </div> -->
-            <button type="submit" class="btn btn-success mt-3">Add Quote</button>
+            <button type="submit" class="btn  mt-3">Add Quote</button>
     
         </form>
         
