@@ -1,3 +1,18 @@
 hr{
     height:5px;border: width 50%;;color:purple;background-color:purple;
 }
+
+
+input,textarea{
+    border: 2px solid #7F00FF;
+    border-radius: 5px;
+
+}
+.btn{
+    background-color: #7F00FF;
+    color: whitesmoke;
+    font-weight: bold;
+}
+label{
+    font-weight: bolder;
+}
