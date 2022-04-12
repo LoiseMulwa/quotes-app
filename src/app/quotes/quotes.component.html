@@ -1,0 +1,47 @@
+<div class="container">
+    <div class="col-md-6">
+    <ul *ngFor="let quote of quotes; let i=index">
+        <!-- <div *ngIf="quote.upvote ==highest && quote.upvote>0;then highlight else empty"></div> -->
+       
+        <ng-template #highlight>
+            <li appHighlight>{{quote.quote}} <br>
+
+                <span class="text-primary"> Name: {{quote.name}}</span> <br>
+                <span class="text-primary"> Author: {{quote.author}}</span> <br>
+            </li>
+
+        </ng-template>
+        <ng-template #empty>
+            <li>
+                {{quote.quote}} <br>
+                <span class="text-primary"> Name:{{quote.name}}</span> <br>
+                <span class="text-primary"> Author: {{quote.author}}</span> <br>
+            </li>
+
+        </ng-template>
+        <li>
+            Quote:{{quote.quote}} <br>
+            <span class="text-primary"> Name:{{quote.name}}</span> <br>
+           
+            <span class="text-primary"> Author: {{quote.author}}</span> <br>
+            <p>datePosted: {{quote.myDate | date:"short"}}</p>
+             <app-votes></app-votes>
+             <button type="button" class="btn btn-danger text-white" (click)=' deleteQuote(i)'>Delete</button>
+
+
+
+
+        </li>
+    </ul>
+</div>
+<div class="col-md-6" >
+    <app-forms (addQuote)="addNewQuote($event)"></app-forms>
+
+</div>
+
+
+   
+ 
+</div>
+        
+
