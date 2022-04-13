@@ -29,11 +29,12 @@
            <br>
            <span class="mymy text-info fs-4"> <span style="color: whitesmoke;"><em >Author:</em></span> {{quote.author}} </span>
            <br>
-           
 
-            <p class="jjk text-light fs-3">datePosted: {{quote.myDate | date:"short"}}</p>
+
+           <p class="jjk text-light fs-3"><em>datePosted: </em><span class="lmm text-info"> {{quote.myDate | date:"short"}}</span></p>
              <app-votes></app-votes>
-             <button type="button" class="btn btn-danger text-white" (click)=' deleteQuote(i)'>Delete</button>
+            
+             <button type="button" class="btn btn-danger text-white mt-2" (click)=' deleteQuote(i)'>Delete</button>
             
 
 

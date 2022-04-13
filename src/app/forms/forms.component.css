@@ -22,3 +22,14 @@ input,textarea{
 label{
     font-weight: bolder;
 }
+.mul,.btn{
+    margin-left: 25%;
+    color: white;
+}
+form{
+    background-image: url("src/assets/nathan-dumlao-LPRrEJU2GbQ-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+   
+}
