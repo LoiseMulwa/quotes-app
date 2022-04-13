@@ -2,31 +2,36 @@
     <div class="loisey" >
        
     <ul *ngFor="let quote of quotes; let i=index">
-        <!-- <div *ngIf="quote.upvote ==highest && quote.upvote>0;then highlight else empty"></div> -->
-       
-        <ng-template #highlight>
-            <li appHighlight>{{quote.quote}} <br>
+        <div *ngIf="quote.upvote == highest && quote.upvote >0; then highlight else empty"></div>
 
+       
+        <ng-template #highlight class="lolo mt-5 text-light">
+            <li appHighlight>{{quote.quote}} <br>
+<!-- 
                 <span class="text-primary"> Name: {{quote.name}}</span> <br>
-                <span class="text-primary"> Author: {{quote.author}}</span> <br>
+                <span class="text-primary"> Author: {{quote.author}}</span> <br> -->
             </li>
        
 
         </ng-template>
         <ng-template #empty>
-            <li>
+            <!-- <li>
                 {{quote.quote}} <br>
                 <span class="text-primary"> Name:{{quote.name}}</span> <br>
                 <span class="text-primary"> Author: {{quote.author}}</span> <br>
-            </li>
+            </li> -->
 
         </ng-template>
         <li>
-            Quote:{{quote.quote}} <br>
-            <span class="text-primary"> Name:{{quote.name}}</span> <br>
+            <span class="mymy text-info fs-4"> <span style="color: whitesmoke;"><em>Quote:</em></span> {{quote.quote}} </span>
+           <br>
+           <span class="mymy text-info fs-4"> <span style="color: whitesmoke;"><em>Name:</em> </span> {{quote.name}} </span>
+           <br>
+           <span class="mymy text-info fs-4"> <span style="color: whitesmoke;"><em >Author:</em></span> {{quote.author}} </span>
+           <br>
            
-            <span class="text-primary"> Author: {{quote.author}}</span> <br>
-            <p>datePosted: {{quote.myDate | date:"short"}}</p>
+
+            <p class="jjk text-light fs-3">datePosted: {{quote.myDate | date:"short"}}</p>
              <app-votes></app-votes>
              <button type="button" class="btn btn-danger text-white" (click)=' deleteQuote(i)'>Delete</button>
             

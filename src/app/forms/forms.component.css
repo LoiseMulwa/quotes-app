@@ -1,11 +1,17 @@
 hr{
-    height:5px;border: width 50%;;color:purple;background-color:purple;
+    height:5px;border: width 50%;;color:rebeccapurple;background-color:rebeccapurple;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 }
 
 
 input,textarea{
     border: 2px solid #7F00FF;
     border-radius: 5px;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
 
 }
 .btn{

@@ -1,8 +1,15 @@
-.body{
-  background-color: rebeccapurple;
-}
+
 .loisey{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+.loisey{
+    background-image: url("src/assets/elliott-engelmann-DjlKxYFJlTc-unsplash.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+/* .mymy{
+    color: #7F00FF;
+} */
