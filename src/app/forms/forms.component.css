@@ -33,3 +33,27 @@ form{
     height: 400px;
    
 }
+.btn{
+
+    box-shadow: 0 9px black;
+    -webkit-animation: bounce .5s infinite alternate;
+    -moz-animation: bounce .5s infinite alternate;
+    animation: bounce .5s infinite alternate;
+  }
+  @-webkit-keyframes bounce {
+    to { -webkit-transform: scale(1.2); }
+  }
+  @-moz-keyframes bounce {
+    to { -moz-transform: scale(1.2); }
+  }
+  @keyframes bounce {
+    to { transform: scale(1.2); }
+  }
+  .btn:hover {background-color: #add8e6}
+ .qq{
+     font-family: rancho;
+     font-size: xx-large;
+     color:  #7F00FF !important;
+ }
+
+
