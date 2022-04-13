@@ -32,7 +32,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 
 ## LIVE LINK
-* Click this link to view my website-
+* Click this link to view my website-https://loisemulwa.github.io/quotes-app/
 
 
 
