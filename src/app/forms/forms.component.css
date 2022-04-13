@@ -30,7 +30,7 @@ form{
     background-image: url("src/assets/nathan-dumlao-LPRrEJU2GbQ-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    height: 400px;
+    height: 500px;
    
 }
 .btn{
@@ -54,6 +54,9 @@ form{
      font-family: rancho;
      font-size: xx-large;
      color:  #7F00FF !important;
+ }
+ .ess{
+     padding-top: 3%;
  }
 
 
